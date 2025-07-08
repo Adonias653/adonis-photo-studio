@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="AK Photo Studio - Professional Photography Services">
+  <meta name="author" content="AK Photo Studio">
+  <title>AK Photo Studio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+    }
+    body {
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #222;
+      color: white;
+      padding: 20px 40px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 2.8rem;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #333;
+      padding: 12px;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      background: url('https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+    }
+    .hero h2 {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 2.5rem;
+    }
+    .section {
+      padding: 60px 30px;
+      text-align: center;
+    }
+    .section h3 {
+      font-size: 2rem;
+      color: #222;
+      margin-bottom: 20px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 15px;
+      padding: 0 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .signup {
+      background-color: #eef2f5;
+      padding: 40px 20px;
+      text-align: center;
+      border-top: 2px solid #ccc;
+    }
+    .signup form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+    }
+    .signup input[type="text"], .signup input[type="email"] {
+      padding: 10px;
+      width: 300px;
+      border-radius: 5px;
+      border: 1px solid #aaa;
+    }
+    .signup button {
+      padding: 10px 25px;
+      background-color: #222;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    .signup button:hover {
+      background-color: #444;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+      font-size: 0.9em;
+    }
+    a:focus, button:focus, input:focus {
+      outline: 3px solid #f8b400;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AK Photo Studio</h1>
+    <p>Professional, Accessible & Artistic Visuals</p>
+  </header>
+
+  <nav aria-label="Main Navigation">
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+    <a href="#signup">Sign Up</a>
+  </nav>
+
+  <section class="hero" role="region" aria-label="Hero Section">
+    <h2>Capturing Your Moments with Precision and Art</h2>
+  </section>
+
+  <section class="section" id="about">
+    <h3>About AK Photo Studio</h3>
+    <p>We are a creative photography studio delivering timeless portraits, commercial visuals, wedding shoots, and artistic campaigns with industry-grade precision and a touch of elegance. Our passion is to turn moments into masterpieces.</p>
+  </section>
+
+  <section class="section" id="gallery">
+    <h3>Our Portfolio</h3>
+    <div class="gallery">
+      <img src="https://source.unsplash.com/featured/?portrait" alt="Portrait Sample">
+      <img src="https://source.unsplash.com/featured/?studio" alt="Studio Session">
+      <img src="https://source.unsplash.com/featured/?wedding" alt="Wedding Photo">
+      <img src="https://source.unsplash.com/featured/?photographer" alt="Photographer at Work">
+      <img src="https://source.unsplash.com/featured/?fashion" alt="Fashion Photography">
+      <img src="https://source.unsplash.com/featured/?artistic" alt="Artistic Composition">
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h3>Contact Us</h3>
+    <p>Email: contact@akphotostudio.com<br>Phone: +251 911 123 456<br>Telegram: <a href="https://t.me/Kiyu123519" target="_blank">@Kiyu123519</a></p>
+  </section>
+
+  <section class="signup" id="signup">
+    <h3>Sign Up for Updates</h3>
+    <form aria-label="Sign Up Form">
+      <input type="text" name="name" placeholder="Your Name" required aria-required="true" />
+      <input type="email" name="email" placeholder="Your Email" required aria-required="true" />
+      <button type="submit">Subscribe</button>
+    </form>
+  </section>
+
+  <footer>
+    &copy; 2025 AK Photo Studio. All rights reserved.<br>
+    Built with accessibility and professionalism in mind.
+  </footer>
+</body>
+</html>
